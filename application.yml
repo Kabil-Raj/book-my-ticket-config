@@ -8,3 +8,12 @@ spring:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+ 
+ eureka:
+  client:
+    register-with-client: true
+    fetch-registry: true
+    service-url: 
+      defaultZone: http://localhost:7777/eureka/
+  instance:
+      hostName: localhost

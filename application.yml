@@ -1,9 +1,9 @@
 spring:
   datasource:
-    url: jdbc:mysql://bookmyticketdbinstance.ccurtbvhvqj1.ap-south-1.rds.amazonaws.com/BookMyTicket
+    url: jdbc:mysql://127.0.0.1:3306/BookMyTicket
     drvierClassName: com.mysql.cj.jdbc.Driver
-    username: admin
-    password: Password1234!
+    username: root
+    password: ${{secrets.DB_PASSWORD}}
   jpa:
     hibernate:
       ddl-auto: update

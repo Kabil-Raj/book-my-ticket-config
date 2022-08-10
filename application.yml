@@ -10,10 +10,11 @@ spring:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
  
 eureka:
+  instance:
+      preferIpAddress: true
   client:
     register-with-client: true
     fetch-registry: true
     service-url: 
-      defaultZone: http://localhost:8761/eureka/
-  instance:
-      hostName: localhost
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka/}
+

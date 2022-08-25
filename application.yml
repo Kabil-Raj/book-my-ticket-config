@@ -3,7 +3,7 @@ spring:
     url: jdbc:mysql://localhost:3306/BookMyTicket
     drvierClassName: com.mysql.cj.jdbc.Driver
     username: root
-    password: password
+    password: Electronic1702!
   jpa:
     hibernate:
       ddl-auto: update

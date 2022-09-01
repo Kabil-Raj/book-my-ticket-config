@@ -1,9 +1,9 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/BookMyTicket
+    url: jdbc:mysql://mysql:3306/BookMyTicket
     drvierClassName: com.mysql.cj.jdbc.Driver
     username: root
-    password: Electronic1702!
+    password: password
   jpa:
     hibernate:
       ddl-auto: create-drop
